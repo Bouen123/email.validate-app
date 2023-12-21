@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="./validate-email.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div id="wrapper" class="wrapper">
+        <div class="letter">
+            <h1>Stay updated!</h1>
+            <p class="">Join 60,000+ product managers receiving monthly<br>updates on:</p>
+            <div class="condition">
+                <div class="icon">
+                    <img src="./assets/images/icon-list.svg">
+                    <p>Discovery and building what matters</p>
+                </div>
+                <div class="icon">
+                    <img src="./assets/images/icon-list.svg">
+                    <p>Product discovery and building what matters</p>
+                </div>
+                <div class="icon">
+                    <img src="./assets/images/icon-list.svg">
+                    <p>Product discovery and building what matters</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="space">
+                <p>Email address</p>
+                <div id="invalid" style="color: red; display: none;">Invalid email address</div>
+            </div>
+                <input id="emailInput" class="input1" placeholder="email@company.com" >
+                <!-- Add a div to display an error message -->
+                
+            </div>
+
+            <div class="btn">
+                <!-- Add an onclick attribute to call the validation function -->
+                <button id="btn1" class="btn1" onclick="validateEmail()">Subscribe to monthly newsletter</button>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="./assets/images/illustration-sign-up-desktop.svg">
+        </div>
+        <div class="mobile-img">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </div>
+    </div>
+    <!-- second page -->
+    <div class="submit" id="submit">
+      <img src="./assets/images/icon-list.svg" alt="/">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+          Please open it and click the button inside to confirm your subscription.</p>
+          <button class="dismiss" id="dismiss" onclick="dismissEmail()">Dismiss Message</button>
+    </div>
+  
+</body>
+</html>

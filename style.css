@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+    padding: 0; 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    background-color: white;
+    width: 770px;
+    border-radius: 20px;
+   
+}
+.letter{
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 50px;
+    gap: 10px;
+}
+.condition{
+    .icon{
+        /* margin: 10px; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px; 
+    }
+    .icon img {
+        gap: 10px;
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form p{
+    padding-bottom: 10px;
+}
+.input1{
+    display: block;
+    height: 15px;
+    padding:10px;
+    width: 325px;
+    border-radius: 10px;   
+}
+.input1:hover{
+    display: block;
+    height: 20px;
+    padding:10px;
+    width: 330px;
+    border-radius: 10px;
+}
+.btn1{
+    background-color: hsl(235, 18%, 26%);
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    color: white;
+}
+.btn1:hover{
+    background-color: hsl(235, 18%, 26%);
+    height: 45px;
+    width: 355px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color:   hsl(4, 100%, 67%) ;
+}
+
+
+.picture > img {
+  
+    
+        margin-top: 5px;
+        margin-left: 35px;
+        width: 300px;
+        height: 490px;
+}
+.submit{
+    background-color: white ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    gap: 10px;
+    display: none;
+}
+.submit > img {
+    width: 50px;
+    
+}
+
+.submit > p {
+    font-size: 13px;
+
+}
+.submit > .dismiss {
+    height: 50px;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    
+}
+.dismiss:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 48%);
+    height: 55px;
+    box-shadow: 0px 10px 17px -6px hsl(4, 100%, 48%);
+}
+.form > .space {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-img{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    .picture{
+        display: none;
+    }
+    .mobile-img{
+        display: flex;
+        margin-left: 30px;  
+    }
+    .letter{
+        margin: 30px 0 20px 40px;
+        .btn1{
+            margin-bottom: 0;
+        }
+    }
+
+}
+
